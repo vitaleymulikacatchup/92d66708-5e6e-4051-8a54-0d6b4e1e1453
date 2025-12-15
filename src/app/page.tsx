@@ -51,13 +51,13 @@ export default function Home() {
           title="What Our Customers Say"
           testimonials={[
             {
-              quote: "Amazing food and incredible service. The atmosphere is perfect for any occasion.",
+              text: "Amazing food and incredible service. The atmosphere is perfect for any occasion.",
               author: "Sarah Johnson",
               role: "Food Enthusiast",
               avatar: "/placeholders/placeholder1.webp"
             },
             {
-              quote: "Best dining experience in the city. Every dish is crafted to perfection.",
+              text: "Best dining experience in the city. Every dish is crafted to perfection.",
               author: "Mike Chen",
               role: "Local Reviewer",
               avatar: "/placeholders/placeholder1.webp"
@@ -95,13 +95,13 @@ export default function Home() {
           title="Customer Reviews"
           testimonials={[
             {
-              quote: "Exceptional quality and service every time we visit.",
+              text: "Exceptional quality and service every time we visit.",
               author: "Emma Wilson",
               role: "Regular Customer",
               avatar: "/placeholders/placeholder1.webp"
             },
             {
-              quote: "The chef's creativity shines through in every dish.",
+              text: "The chef's creativity shines through in every dish.",
               author: "David Brown",
               role: "Food Critic",
               avatar: "/placeholders/placeholder1.webp"
