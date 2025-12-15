@@ -27,12 +27,12 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple 
           navItems={[
-            { label: "Hero", href: "hero" },
-            { label: "Testimonials", href: "testimonial-carousel" },
-            { label: "Menu", href: "menu" },
-            { label: "About", href: "about" },
-            { label: "Reviews", href: "testimonials" },
-            { label: "Contact", href: "contact" }
+            { name: "Hero", href: "hero" },
+            { name: "Testimonials", href: "testimonial-carousel" },
+            { name: "Menu", href: "menu" },
+            { name: "About", href: "about" },
+            { name: "Reviews", href: "testimonials" },
+            { name: "Contact", href: "contact" }
           ]}
         />
       </div>
