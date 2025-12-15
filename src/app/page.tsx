@@ -1,14 +1,14 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
-import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import HeroBillboardCarousel from "@/components/sections/hero/HeroBillboardCarousel";
-import TestimonialCardEight from "@/components/sections/testimonial/TestimonialCardEight";
-import FeatureCardNineteen from "@/components/sections/feature/FeatureCardNineteen";
-import TagAbout from "@/components/sections/about/TagAbout";
-import TestimonialCardSix from "@/components/sections/testimonial/TestimonialCardSix";
-import ContactInline from "@/components/sections/contact/ContactInline";
-import FooterSocial from "@/components/sections/footer/FooterSocial";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import HeroOverlayBottomSplit from '@/components/sections/hero/HeroOverlayBottomSplit';
+import TestimonialCardEight from '@/components/sections/testimonial/TestimonialCardEight';
+import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
+import TagAbout from '@/components/sections/about/TagAbout';
+import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
+import ContactInline from '@/components/sections/contact/ContactInline';
+import FooterSocial from '@/components/sections/footer/FooterSocial';
 
 export default function Home() {
   return (
@@ -24,25 +24,11 @@ export default function Home() {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <NavbarStyleApple />
+      <div id="nav" data-section="nav">
+        <NavbarStyleApple />
+      </div>
       <div id="hero" data-section="hero">
-        <HeroBillboardCarousel
-          title="Welcome to Our Platform"
-          description="Create beautiful, responsive web experiences"
-          tag="New Release"
-          mediaItems={[
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 1" },
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 2" },
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 3" },
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 4" },
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 5" },
-            { imageSrc: "/images/noise.webp", imageAlt: "Portfolio 6" },
-          ]}
-          buttons={[
-            { text: "Get Started", href: "https://example.com" },
-            { text: "Learn More", href: "about" },
-          ]}
-        />
+        <HeroOverlayBottomSplit />
       </div>
       <div id="testimonial-carousel" data-section="testimonial-carousel">
         <TestimonialCardEight />
