@@ -5,6 +5,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import HeroOverlayBottomSplit from '@/components/sections/hero/HeroOverlayBottomSplit';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
 import TagAbout from '@/components/sections/about/TagAbout';
+import TestimonialCardEight from '@/components/sections/testimonial/TestimonialCardEight';
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactInline from '@/components/sections/contact/ContactInline';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -46,6 +47,54 @@ export default function LandingPage() {
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1765798893651-bktzx2js.jpg"
           imageAlt="Premium espresso with latte art"
           showDimOverlay={false}
+        />
+      </div>
+
+      <div id="testimonial-carousel" data-section="testimonial-carousel">
+        <TestimonialCardEight
+          tag="Customer Love"
+          title="What Our Guests Say"
+          description="Hear from coffee enthusiasts who make BrewLoft part of their daily routine"
+          testimonials={[
+            {
+              id: "1",
+              name: "Sarah Martinez",
+              role: "Coffee Enthusiast",
+              company: "Local Resident",
+              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1765798899571-hdv25cva.jpg",
+              imageAlt: "Sarah Martinez"
+            },
+            {
+              id: "2",
+              name: "James Chen",
+              role: "Coffee Connoisseur",
+              company: "Coffee Lover",
+              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1765798900802-jz2th6od.jpg",
+              imageAlt: "James Chen"
+            },
+            {
+              id: "3",
+              name: "Emma Thompson",
+              role: "Pastry Lover",
+              company: "Regular Guest",
+              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1765798902211-cwbynw5v.jpg",
+              imageAlt: "Emma Thompson"
+            },
+            {
+              id: "4",
+              name: "Michael Rodriguez",
+              role: "Digital Nomad",
+              company: "Remote Worker",
+              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1765798903262-1t52dyqq.jpg",
+              imageAlt: "Michael Rodriguez"
+            }
+          ]}
+          textboxLayout="default"
+          useInvertedBackground="noInvert"
         />
       </div>
 
